@@ -1,0 +1,107 @@
+# A - Average of numbers with less than N digits
+a) Implement a module to determine the number of digits of a given number as a parameter.
+ 
+b)Write a program to read a sequence of integers with less than N digits and average these numbers.
+The value of N must be the first number read.
+
+The program must first read the maximum number of digits (N) the numbers can have.
+Then read integers smaller than N.
+The program ends when a number with more than N digits is entered or when more than K numbers are read.
+
+The average should be displayed to 2 decimal places.
+
+Use a constant to define the maximum number of elements that can be read (K = 5).
+
+# B - Ranking chart
+Write a program to display, in the form of bar graph, the number of students in a class that scored "Approved" and "Failed" on a set of subjects.
+The program should start by asking the number of students in the class and the number of subjects and, for each subject will ask the name of the subject and the number of students with approval.
+
+Implement a module to print information about a subject.
+
+The output should look like this:
+
+Subject: Portuguese
+- Approved: ******
+- Failed: ****
+Subject: Math
+- Approved: *******
+- Failed: ***
+
+# C - Calculate the angles of a triangle
+a) Implement a method that calculates an inner angle of a triangle. The method must take as parameter the measurements on the three sides of the triangle and returns the calculated angle in degrees.
+
+b) Write a program that asks for the three-sided measurements of a triangle, check if they are valid and if it is possible to form a triangle. If so, calculate all 3 internal angles of this triangle. To do this, invoke the method developed in the previous paragraph three times.
+
+# D - Combinations and permutations
+Write a program that calculates the number of possible combinations and permutations of a set of elements. You must enter the total quantity of elements (m) and the subset size to group (n).
+The formulas are as follows:
+
+- Combinations of m elements, in subsets of size n (m> = n).
+              m!
+C (m, n) = -----------
+            n! (m-n)!
+          
+Permutations of m elements, in subsets of size n (m> = n).
+              m!
+P (m, n) = ---------
+            (m-n)!
+
+Each result should appear on separate line and in the following format:
+C(5,2)=10
+P(5,2)=20
+
+NOTE: Implement the following methods:
+factorial ()
+combinations ()
+permutations ()
+
+# E - Digits at common positions
+a) Implement a module that receives two positive integers and returns the number of common digits in the same positions.
+
+b) Write a program to read N pairs of positive integers. The value of N is entered by the user.
+After reading the N value pairs, the program must display the pair that has the most common digits at the same positions. If there is more than one pair with the same number of digits in common, the last pair found must be displayed.
+
+
+The result should contain only the pair in question in the following format:
+"number1/number2".
+
+If there are no pair of numbers that have digits in common, the message "no results" should be displayed.
+
+# F - Volume of revolution solids
+Write a program to determine volumes of revolution solids. Consider only these types of solids: cylinder, cone and sphere.
+For each solid, the type of solid and its dimensions (radius and height if required) will be entered.
+
+The program must be able to function repeatedly until the word "end" is entered as a solid type.
+
+Each result should be presented on separate lines and with two decimal places.
+
+Implement a separate method to calculate the volume of each solid.
+
+
+NOTE:
+Volume sphere = 4/3 π R3
+Volume cylinder = π R2 Height
+Volume cone = 1/3 π R2 Height
+
+# G - Armstrong Numbers
+An Armstrong number has the following characteristic: the sum of the digits raised to the number of digits equals the number itself.
+For example:
+2 = 2 ^ 1 (1 digit => sum all digits raised to 1)
+407 = 4 ^ 3 + 0 ^ 3 + 7 ^ 3 (3 digits => add all digits raised to 3)
+1634 = 1 ^ 4 + 6 ^ 4 + 3 ^ 4 + 4 ^ 4 (4 digits => add up to 4 digits)
+
+a) Implement a method to verify that an integer is an Armstrong number.
+
+b) Write a program to display all Armstrong numbers up to a user-entered value N.
+
+# H - Palindrome
+A palindrome is a sequence that reads the same backward as forward.
+a) Implement a method that checks whether or not an integer is a palindrome.
+
+b) Write a program to find a palindrome in a sequence of user-entered integers. The program should read a number, verify if it is a palindrome and, if so, the message "palindrome" should be displayed, otherwise another number should be read. The program ends when it finds a palindrome or the size of the sequence exceeds a threshold value (5). The threshold value is the maximum number of attempts (5) without finding a palindrome. The message "attempts exceeded" should be displayed if the threshold value is exceeded.
+
+# I - Fibonacci Number
+Write a program to determine if a user-entered integer is a number of the Fibonacci sequence.
+In Fibonacci's succession, the first term is zero (0), the second is one (1), and any of the other terms is the sum of the previous two (0,1,1,2,3,5,8,13, 21,34,55,89,144, ...).
+
+The message "is a Fibonacci number" or "is not a Fibonacci number" should be displayed if the number entered belongs to the sequence of Fibonacci or not, respectively.
