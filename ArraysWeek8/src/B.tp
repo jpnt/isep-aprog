@@ -1,0 +1,6 @@
+arr = read_positive_ints();
+min = minimum_value(arr);
+occurrences = value_count(min, arr);
+
+printf("min=%d\n", min);
+printf("occurrences=%d\n", occurrences");
